@@ -19,4 +19,12 @@ footer {
         max-width: 625px;
         margin-inline: auto;
     }
+    a {
+        color: var(--col-green-400);
+        transition: opacity var(--transition);
+        &:hover {
+            color: var(--col-green-400);
+            opacity: 0.8;
+        }
+    }
 }
