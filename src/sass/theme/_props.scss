@@ -1,0 +1,25 @@
+$col-primary-400: #e55a22; // more orange
+$col-primary-200: #ffd0b2;
+$col-grey-400: #6c757d;
+$col-grey-200: #f0f0f0;
+$col-black: #101010;
+$col-white: #fbfbfb;
+
+:root {
+    --hsl-blue-100: 203 44% 93%;
+    --hsl-blue-200: 202 46% 90%;
+    --hsl-blue-900: 243 22% 35%;
+    --hsl-green-400: 181 59% 54%;
+    
+    --col-blue-100: hsl(var(--hsl-blue-100));
+    --col-blue-200: hsl(var(--hsl-blue-200));
+    --col-blue-900: hsl(var(--hsl-blue-900));
+    --col-green-400: hsl(var(--hsl-green-400));
+
+    --fw-400: 300;
+    --fw-600: 500;
+    --fw-900: 700;
+
+    --transition: 200ms ease-in;
+
+}

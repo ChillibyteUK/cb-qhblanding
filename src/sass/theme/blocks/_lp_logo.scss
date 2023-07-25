@@ -1,0 +1,12 @@
+.lp_logo {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3rem;
+    background-color: var(--col-blue-200);
+    &__logo {
+        max-width: min(300px,60vw);
+        margin-inline: auto;
+    }
+}

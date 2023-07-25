@@ -1,0 +1,174 @@
+.form_container {
+    background-color: var(--col-blue-200);
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form_inner {
+    margin-inline: auto;
+    width: min(600px,90vw);
+    isolation: isolate;
+}
+
+.gform_heading {
+    display: none;
+}
+
+.ginput_container_radio {
+    padding-top: 1rem;
+}
+
+.gfield_radio {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 1rem;
+    justify-content: center;
+}
+
+// .form_container legend.gfield_label.gform-field-label,
+.form_container .gfield_label.gform-field-label {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+    font-weight: var(--fw-600);
+    color: var(--col-blue-900);
+    text-wrap: balance;
+}
+.form_container .gform_wrapper.gravity-theme .gfield_required {
+    display: none;
+}
+.gfield-choice-input {
+    display: none !important;
+}
+.gform-field-label:not(.gfield_label, .gform-field-label--type-sub ) {
+    display: grid !important;
+    place-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: var(--fw-600);
+    width: 110px;
+    aspect-ratio: 1;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    transition: background-color var(--transition); // , color var(--transition);
+
+    //     background-color: var(--col-blue-900);
+    //     color: white;
+    // }
+
+    // isolation: isolate;
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 100vw;
+    background-color: var(--col-blue-200);
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        background-image: conic-gradient(var(--col-blue-900) 0deg, var(--col-blue-900) 300deg, transparent 300deg, transparent 330deg, var(--col-blue-900) 330deg);
+        z-index: -1;
+        border-radius: 100vw;
+        transition: transform var(--transition);
+    }
+    &:hover {
+        background-color: var(--col-blue-100);
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+:not(#gform_page_1_8, #gform_page_1_9, #gform_page_1_10, #gform_page_1_11) > .gform_page_footer.before {
+    visibility: hidden;
+    height: 0;
+}
+.gform_previous_button {
+    display: none !important;
+}
+
+
+.gform_wrapper.gravity-theme .ginput_complex {
+    display: grid;
+    gap: 1rem;
+    @media (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    margin-bottom: 1rem;
+
+    .gform-grid-col {
+        display: grid;
+        input {
+            order: 1;
+        }
+    }
+}
+
+.ginput_container_text,
+.ginput_container_email {
+    margin-bottom: 1rem;
+    input[aria-invalid="true"] {
+        border: 1px solid firebrick !important;
+    }
+}
+.gfield_description {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.gform_wrapper.gravity-theme .gf_progressbar {
+    background-color: var(--col-blue-100) !important;
+    // border-radius: 0 !important;
+}
+.percentbar_custom {
+    background-color: var(--col-blue-900) !important;
+}
+.gform_wrapper.gravity-theme .gf_progressbar_percentage:not(.percentbar_100) {
+    border-radius: 0 !important;
+}
+.gform_wrapper.gravity-theme .gf_progressbar_percentage span {
+    display: none !important;
+}
+.gform_wrapper.gravity-theme .gf_progressbar_percentage {
+    height: 2px !important;
+}
+
+.gform_wrapper.gravity-theme .gf_progressbar_title {
+    font-size: 2.4rem !important;
+    font-weight: var(--fw-300);
+    color: var(--col-green-400) !important;
+}
+
+p.gf_progressbar_title {
+    margin-bottom: 0.25rem;
+}
+
+.gf_progressbar_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.gform_page_footer input[type=button],
+.gform_page_footer button {
+    @extend .btn;
+    @extend .btn-primary;
+    border-radius: 0;
+    background-color: var(--col-blue-900);
+    border-color: var(--col-blue-900);
+    color: white;
+    padding: 0.5rem 2rem;
+    &:hover {
+        background-color: var(--col-green-400);
+        border-color: var(--col-green-400);
+        color: black;
+    }
+}
+
+h2.gform_submission_error {
+    font-size: 1rem;
+}

@@ -1,0 +1,88 @@
+.lp_property_type {
+    background-color: var(--col-blue-200);
+    padding-top: 1.5rem;
+    border-radius: thin solid var(--col-blue-900);
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    &__badge {
+        margin-top: -4rem;
+        background-color: var(--col-green-400);
+        border-radius: 100vw;
+        aspect-ratio: 1;
+        width: 230px;
+        margin-inline: auto;
+        padding: 0.75rem;
+        position: relative;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        isolation: isolate;
+        margin-bottom: 1rem;
+    }
+    
+    &__badge-inner {
+        aspect-ratio: 1;
+        width: 100%;
+        border-radius: 100vw;
+        text-align: center;
+        padding-inline: 1rem;
+        background-color: var(--col-green-400);
+        text-transform: uppercase;
+        font-weight: var(--fw-600);
+        img {
+            margin-inline: auto;
+            margin-bottom: 0.5rem;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background-image: conic-gradient(
+                transparent 0deg,
+                transparent 20deg,
+                var(--col-blue-900) 20deg,
+                var(--col-blue-900) 340deg,
+                transparent 340deg,
+                transparent 360deg
+            );
+            z-index: -1;
+            border-radius: 100vw;
+            margin: 0.75rem;
+        }
+    }
+    
+    &__inner {
+        margin-inline: auto;
+        width: min(600px,90vw);
+        font-size: 1.25rem;
+        font-weight: var(--fw-600);
+        div.radio {
+            margin-bottom: 0.5rem;
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: 1rem auto;
+            label {
+                width: 100%;
+            }
+        }
+    }
+
+    button {
+        @extend .btn;
+        @extend .btn-primary;
+        border-radius: 0;
+        background-color: var(--col-blue-900);
+        border-color: var(--col-blue-900);
+        color: white;
+        padding: 0.5rem 2rem;
+        text-transform: uppercase;
+        font-weight: var(--fw-600);
+        &:hover {
+            background-color: var(--col-green-400);
+            border-color: var(--col-green-400);
+            color: black;
+        }
+    }
+
+}

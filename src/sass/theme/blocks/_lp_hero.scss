@@ -1,0 +1,32 @@
+.lp_hero {
+    background-size: cover;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+&__logo {
+    max-width: min(300px,60vw);
+    margin-inline: auto;
+}
+
+    .container-xl {
+        max-width: 625px;
+        margin-bottom: -1.5rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        line-height: 1.45;
+        text-wrap: balance;
+        max-width: 66vw;
+        margin-bottom: 0;
+        span {
+            background-color: hsl(var(--hsl-blue-900) / .9);
+            padding-inline: 5px;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+    }
+}

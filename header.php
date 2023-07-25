@@ -17,12 +17,14 @@ defined('ABSPATH') || exit;
     <meta
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/noto-sans-v28-latin-regular.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v35-latin-300.woff2"
+        as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v35-latin-500.woff2"
+        as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v35-latin-700.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
 if (get_field('ga_property', 'options')) {
@@ -40,7 +42,7 @@ if (get_field('ga_property', 'options')) {
         gtag('js', new Date());
         gtag('config',
             '<?=get_field('ga_property', 'options')?>'
-            );
+        );
     </script>
     <?php
 }
@@ -63,7 +65,7 @@ if (get_field('gtm_property', 'options')) {
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer',
             '<?=get_field('gtm_property', 'options')?>'
-            );
+        );
     </script>
     <!-- End Google Tag Manager -->
     <?php
