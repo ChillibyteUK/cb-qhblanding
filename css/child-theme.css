@@ -14679,9 +14679,10 @@ body {
   display: grid !important;
   place-content: center;
   text-align: center;
-  text-transform: uppercase;
   font-size: 0.85rem;
   font-weight: var(--fw-600);
+  color: var(--col-blue-900);
+  line-height: 1.1;
   width: 110px;
   aspect-ratio: 1;
   padding: 0.5rem;
@@ -14691,7 +14692,7 @@ body {
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 100vw;
-  background-color: var(--col-blue-200);
+  background-color: var(--col-blue-100);
 }
 .gform-field-label:not(.gfield_label, .gform-field-label--type-sub)::after {
   content: "";
@@ -14701,9 +14702,6 @@ body {
   z-index: -1;
   border-radius: 100vw;
   transition: transform var(--transition);
-}
-.gform-field-label:not(.gfield_label, .gform-field-label--type-sub):hover {
-  background-color: var(--col-blue-100);
 }
 .gform-field-label:not(.gfield_label, .gform-field-label--type-sub):hover::after {
   transform: rotate(180deg);
@@ -14801,6 +14799,11 @@ p.gf_progressbar_title {
 
 h2.gform_submission_error, .gform_submission_error.h2 {
   font-size: 1rem;
+}
+
+.ptype-icon {
+  max-width: 55px;
+  margin-inline: auto;
 }
 
 .lp_logo {

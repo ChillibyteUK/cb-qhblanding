@@ -8,17 +8,17 @@
     </div>
     <div class="lp_property_type__inner">
         <div class="text-center mb-3">Tap your property type below to get started:</div>
-        <div class="radio"><input type="radio" name="ptype" value="detatched" id="detatched"> <label
+        <div class="radio"><input type="radio" name="ptype" value="Detatched" id="detatched"> <label
                 for="detatched">Detatched</label>
         </div>
-        <div class="radio"><input type="radio" name="ptype" value="semi" id="semi"> <label
+        <div class="radio"><input type="radio" name="ptype" value="Semi" id="semi"> <label
                 for="semi">Semi-Detatched</label></div>
-        <div class="radio"><input type="radio" name="ptype" value="terraced" id="terraced"> <label
+        <div class="radio"><input type="radio" name="ptype" value="Terraced" id="terraced"> <label
                 for="terraced">Terraced</label></div>
-        <div class="radio"><input type="radio" name="ptype" value="bungalow" id="bungalow"> <label
+        <div class="radio"><input type="radio" name="ptype" value="Bungalow" id="bungalow"> <label
                 for="bungalow">Bungalow</label></div>
-        <div class="radio"><input type="radio" name="ptype" value="flat" id="flat"> <label for="flat">Flat</label></div>
-        <div class="radio mb-4"><input type="radio" name="ptype" value="other" id="other"> <label
+        <div class="radio"><input type="radio" name="ptype" value="Flat" id="flat"> <label for="flat">Flat</label></div>
+        <div class="radio mb-4"><input type="radio" name="ptype" value="Other" id="other"> <label
                 for="other">Other</label></div>
         <button id="gco">Get a cash offer</button>
     </div>
@@ -29,7 +29,7 @@
         const selectedRadio = document.querySelector('input[name="ptype"]:checked');
         if (selectedRadio) {
             const selectedValue = selectedRadio.value;
-            window.location.href = '/form/?ptype=' + selectedValue;
+            window.location.href = '/form/?t=' + selectedValue;
         }
     })
 </script>
