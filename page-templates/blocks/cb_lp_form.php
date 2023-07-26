@@ -1,33 +1,34 @@
 <?php
 $classes = $block['className'] ?? null;
+$fid = get_field('form_id');
 ?>
 <div class="form_container py-5 <?=$classes?>">
     <div class="form_inner">
-        <?=do_shortcode('[gravityform id="' . get_field('form_id') . '" ajax="true" title="false"]')?>
+        <?=do_shortcode('[gravityform id="' . $fid . '" ajax="true" title="false"]')?>
     </div>
 </div>
 <script>
 
     // if input_27 has value
-    const radioButtons = document.querySelectorAll('input[name="input_27"]');
+    const radioButtons = document.querySelectorAll('input[name="input_3"]');
     let isChecked = false;
 
     for (const radioButton of radioButtons) {
       if (radioButton.checked) {
         isChecked = true;
         console.log('has value');
-        document.getElementById('gform_next_button_1_26').click();
+        document.getElementById('gform_next_button_<?=$fid?>_1').click();
         break;
       }
     }
     // advance to next step
 
-    add_image('label_1_27_0','detatched');
-    add_image('label_1_27_1','semi');
-    add_image('label_1_27_2','terraced');
-    add_image('label_1_27_3','bungalow');
-    add_image('label_1_27_4','flat');
-    add_image('label_1_27_5','other');
+    add_image('label_<?=$fid?>_3_0','detatched');
+    add_image('label_<?=$fid?>_3_1','semi');
+    add_image('label_<?=$fid?>_3_2','terraced');
+    add_image('label_<?=$fid?>_3_3','bungalow');
+    add_image('label_<?=$fid?>_3_4','flat');
+    add_image('label_<?=$fid?>_3_5','other');
 
     function add_image(id,icon) {
         const btn = document.getElementById(id).innerHTML;
