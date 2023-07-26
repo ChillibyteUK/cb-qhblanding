@@ -22,12 +22,12 @@ $classes = $block['className'] ?? null;
     }
     // advance to next step
 
-    add_image('label_2_27_0','detatched');
-    add_image('label_2_27_1','semi');
-    add_image('label_2_27_2','terraced');
-    add_image('label_2_27_3','bungalow');
-    add_image('label_2_27_4','flat');
-    add_image('label_2_27_5','other');
+    add_image('label_1_27_0','detatched');
+    add_image('label_1_27_1','semi');
+    add_image('label_1_27_2','terraced');
+    add_image('label_1_27_3','bungalow');
+    add_image('label_1_27_4','flat');
+    add_image('label_1_27_5','other');
 
     function add_image(id,icon) {
         const btn = document.getElementById(id).innerHTML;
