@@ -14806,42 +14806,6 @@ h2.gform_submission_error, .gform_submission_error.h2 {
   margin-inline: auto;
 }
 
-/*---------------<CF7>--*/
-.wpcf7-form input[type=radio] {
-  display: none;
-}
-.wpcf7-form .wpcf7-list-item-label {
-  display: grid !important;
-  place-content: center;
-  text-align: center;
-  font-size: 0.85rem;
-  font-weight: var(--fw-600);
-  color: var(--col-blue-900);
-  line-height: 1.1;
-  width: 110px;
-  aspect-ratio: 1;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: background-color var(--transition);
-  position: relative;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  border-radius: 100vw;
-  background-color: var(--col-blue-100);
-}
-.wpcf7-form .wpcf7-list-item-label::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background-image: conic-gradient(var(--col-blue-900) 0deg, var(--col-blue-900) 300deg, transparent 300deg, transparent 330deg, var(--col-blue-900) 330deg);
-  z-index: -1;
-  border-radius: 100vw;
-  transition: transform var(--transition);
-}
-.wpcf7-form .wpcf7-list-item-label:hover::after {
-  transform: rotate(180deg);
-}
-
 .lp_logo {
   background-size: cover;
   display: flex;
