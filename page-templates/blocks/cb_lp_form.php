@@ -9,8 +9,8 @@ $fid = get_field('form_id');
 </div>
 <script>
 
-    // if input_27 has value
-    const radioButtons = document.querySelectorAll('input[name="input_3"]');
+    // if ptype input has value
+    const radioButtons = document.querySelectorAll('input[name="input_<?$fid?>_3"]');
     let isChecked = false;
 
     for (const radioButton of radioButtons) {
