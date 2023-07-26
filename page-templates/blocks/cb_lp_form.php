@@ -16,7 +16,7 @@ $classes = $block['className'] ?? null;
       if (radioButton.checked) {
         isChecked = true;
         console.log('has value');
-        document.getElementById('gform_next_button_2_26').click();
+        document.getElementById('gform_next_button_1_26').click();
         break;
       }
     }
