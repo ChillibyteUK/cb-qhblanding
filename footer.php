@@ -4,7 +4,7 @@ defined('ABSPATH') || exit;
 ?>
 <footer>
     <div class="container-xl">
-        <div>Copyright &copy; <?=date('Y')?>
+        <div class="py-3">Copyright &copy; <?=date('Y')?>
             Quick House Buyers.</div>
             <?php /*
         <div><a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a> | <a
