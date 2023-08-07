@@ -83,4 +83,15 @@ wp_head();
 
 <body <?php body_class(); ?>
     <?php understrap_body_attributes(); ?>>
+<?php
+    if (get_field('gtm_property', 'options')) {
+    ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=<?=get_field('gtm_property', 'options')?>"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<?php
+}
+?>
     <?php do_action('wp_body_open'); ?>
