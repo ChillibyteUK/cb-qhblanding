@@ -14,7 +14,7 @@ defined('ABSPATH') || exit;
             by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</div>
             */
             ?>
-        <div>Quick House Buyers is a trading style of Blootek Ventures Limited. Registered in England & Wales, Company Number
+        <div class="pb-3">Quick House Buyers is a trading style of Blootek Ventures Limited. Registered in England & Wales, Company Number
             11833187. Registered address 20-22 Bridge End, Leeds, LS1 4DJ</div>
 </footer>
 
