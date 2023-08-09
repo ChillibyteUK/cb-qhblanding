@@ -12,9 +12,10 @@ defined('ABSPATH') || exit;
         <div>This is a sponsored article and is intended as an advertisement, not editorial content</div>
         <div>This website is not part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed
             by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</div>
-        <div>Quick House Buyer is a trading style of xxx Marketing Group Limited. Registered in England, Company Number:
-            00000000. ICO Number: 00000000. 123 Building Place, Suburb, Town, AB12 3YZ</div>
-            */ ?>
+            */
+            ?>
+        <div>Quick House Buyers is a trading style of Blootek Ventures Limited. Registered in England & Wales, Company Number
+            11833187. Registered address 20-22 Bridge End, Leeds, LS1 4DJ</div>
 </footer>
 
 <?php
