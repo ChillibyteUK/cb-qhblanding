@@ -14739,11 +14739,13 @@ body {
 }
 
 .ginput_container_text,
-.ginput_container_email {
+.ginput_container_email,
+.ginput_container_select {
   margin-bottom: 1rem;
 }
 .ginput_container_text input[aria-invalid=true],
-.ginput_container_email input[aria-invalid=true] {
+.ginput_container_email input[aria-invalid=true],
+.ginput_container_select input[aria-invalid=true] {
   border: 1px solid firebrick !important;
 }
 
