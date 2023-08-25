@@ -35,18 +35,17 @@ $fid = get_field('form_id');
       '<img src="<?=get_stylesheet_directory_uri()?>/img/icon-' + icon +
       '.svg" width=132 height=123 class="ptype-icon">' + btn;
   }
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var forms = document.querySelectorAll('.gform_wrapper');
-
-    forms.forEach(function(form) {
-      form.addEventListener('gform_confirmation_loaded', function(event) {
-        console.log('success');
-        dataLayer.push({
-          'event': 'lead'
-        });
-      });
+</script>
+<?php
+add_action('wp_footer', function () {
+    ?>
+<script type="text/javascript">
+  jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
+    console.log('success');
+    dataLayer.push({
+      'event': 'lead'
     });
   });
 </script>
+<?php
+}, 9999);
