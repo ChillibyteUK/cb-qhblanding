@@ -4,7 +4,7 @@ defined('ABSPATH') || exit;
 ?>
 <footer>
     <div class="container-xl">
-        <div class="text-center"><img src="<?=get_stylesheet_directory_uri()?>/img/NAPB.png" width=312 height=161 alt="NAPB"></div>
+        <div class="text-center"><img src="<?=get_stylesheet_directory_uri()?>/img/NAPB.png" width=156 height=80 alt="NAPB"></div>
         <div class="py-3">Copyright &copy; <?=date('Y')?>
             Quick House Buyers.</div>
             <?php /*
