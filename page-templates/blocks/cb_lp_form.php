@@ -43,9 +43,13 @@ add_action('wp_footer', function () {
   jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
     console.log('success');
     dataLayer.push({
-      'event': 'lead'
+      'event': 'lead',
+      'email': email,
+      'last_name': last_name,
+      'phone_num': phone_num
     });
   });
 </script>
 <?php
 }, 9999);
+?>
