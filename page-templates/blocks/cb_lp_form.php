@@ -40,11 +40,11 @@ $fid = get_field('form_id');
 add_action('wp_footer', function () {
     ?>
 <script type="text/javascript">
-  $(document).on('gform_confirmation_loaded', function(event, formId) {
+  jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
     console.log('success');
-    var email = $('#input_6_21').val();
-    var phone_num = $('#input_6_22').val();
-    var last_name = $('#input_6_24_6').val();
+    var email = document.getElementById('input_6_21').value;
+    var phone_num = document.getElementById('input_6_22').value;
+    var last_name = document.getElementById('input_6_24_6').value;
     
     console.log('email '+email);
     console.log('phone '+phone_num);
