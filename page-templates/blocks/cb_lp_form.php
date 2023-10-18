@@ -36,38 +36,17 @@ $fid = get_field('form_id');
       '.svg" width=132 height=123 class="ptype-icon">' + btn;
   }
 </script>
-<div class="d-none">
-  <input type="hidden" id="email" value="">
-  <input type="hidden" id="phone" value="">
-  <input type="hidden" id="name" value="">
 </div>
 <?php
 add_action('wp_footer', function () {
     ?>
-<script>
-  /* email */
-  document.getElementById('input_6_21').addEventListener('change', function() {
-    console.log('email updated');
-    document.getElementById('email').value = getElementById('input_6_21').value;
-  });
-  /* phone */
-  document.getElementById('input_6_22').addEventListener('change', function() { 
-    console.log('phone updated');
-    document.getElementById('phone').value = getElementById('input_6_22').value;
-  });
-  /* name */
-  document.getElementById('input_6_24_6').addEventListener('change', function() { 
-    console.log('name updated');
-    document.getElementById('name').value = getElementById('input_6_24_6').value;
-  });
-</script>
 <script type="text/javascript">
   jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
     console.log('success');
 
-    var email = document.getElementById('input_6_21').value;
-    var phone_num = document.getElementById('input_6_22').value;
-    var last_name = document.getElementById('input_6_24_6').value;
+    var email = document.getElementById('email').value;
+    var phone_num = document.getElementById('phone').value;
+    var last_name = document.getElementById('name').value;
     
     console.log('email '+email);
     console.log('phone '+phone_num);
