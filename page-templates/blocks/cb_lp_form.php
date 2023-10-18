@@ -46,15 +46,18 @@ add_action('wp_footer', function () {
 
     var email = document.getElementById('email').value;
     var phone_num = document.getElementById('phone').value;
-    var last_name = document.getElementById('name').value;
+    var first_name = document.getElementById('fname').value;
+    var last_name = document.getElementById('lname').value;
     
     console.log('email '+email);
     console.log('phone '+phone_num);
-    console.log('name '+last_name);
+    console.log('first name '+first_name);
+    console.log('last name '+last_name);
 
     dataLayer.push({
       'event': 'lead',
       'email': email,
+      'first_name': first_name,
       'last_name': last_name,
       'phone_num': phone_num
     });
