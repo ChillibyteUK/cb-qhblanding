@@ -46,15 +46,15 @@ add_action('wp_footer', function () {
     ?>
 <script>
   /* email */
-  document.getElementById('input_6_21').on('change', function() { 
+  document.getElementById('input_6_21').addEventListener('change', (event) => { 
     document.getElementById('email').value = getElementById('input_6_21').value;
   });
   /* phone */
-  document.getElementById('input_6_22').on('change', function() { 
+  document.getElementById('input_6_22').addEventListener('change', (event) => { 
     document.getElementById('phone').value = getElementById('input_6_22').value;
   });
   /* name */
-  document.getElementById('input_6_24_6').on('change', function() { 
+  document.getElementById('input_6_24_6').addEventListener('change', (event) => { 
     document.getElementById('name').value = getElementById('input_6_24_6').value;
   });
 </script>
