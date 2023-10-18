@@ -45,6 +45,10 @@ add_action('wp_footer', function () {
     var email = $('#input_6_21').val();
     var phone_num = $('#input_6_22').val();
     var last_name = $('#input_6_24_6').val();
+    
+    console.log('email '+email);
+    console.log('phone '+phone_num);
+    console.log('name '+last_name);
 
     dataLayer.push({
       'event': 'lead',
