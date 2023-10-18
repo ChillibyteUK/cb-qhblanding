@@ -42,6 +42,10 @@ add_action('wp_footer', function () {
 <script type="text/javascript">
   jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
     console.log('success');
+    var email = $('#input_6_21').val();
+    var phone_num = $('#input_6_22').val();
+    var last_name = $('#input_6_24_6').val();
+
     dataLayer.push({
       'event': 'lead',
       'email': email,
