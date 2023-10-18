@@ -46,18 +46,20 @@ add_action('wp_footer', function () {
     ?>
 <script>
   /* email */
-  document.getElementById('input_6_21').onchange = function() {
+  document.getElementById('input_6_21').addEventListener('change', function() {
     console.log('email updated');
     document.getElementById('email').value = getElementById('input_6_21').value;
-  };
+  });
   /* phone */
-  document.getElementById('input_6_22').onchange = function() { 
+  document.getElementById('input_6_22').addEventListener('change', function() { 
+    console.log('phone updated');
     document.getElementById('phone').value = getElementById('input_6_22').value;
-  };
+  });
   /* name */
-  document.getElementById('input_6_24_6').onchange = function() { 
+  document.getElementById('input_6_24_6').addEventListener('change', function() { 
+    console.log('name updated');
     document.getElementById('name').value = getElementById('input_6_24_6').value;
-  };
+  });
 </script>
 <script type="text/javascript">
   jQuery(document).on('gform_confirmation_loaded', function(event, formId) {
